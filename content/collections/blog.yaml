@@ -5,7 +5,13 @@ mount: home
 revisions: false
 route: '/{slug}'
 date: true
-sort_dir: asc
+sort_by: date
+sort_dir: desc
 date_behavior:
   past: public
   future: private
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true

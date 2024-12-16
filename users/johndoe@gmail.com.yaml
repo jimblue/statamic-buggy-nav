@@ -2,3 +2,8 @@ name: 'John Doe'
 super: true
 id: 69b3f616-cb06-46fc-a257-2ac3d0998503
 password_hash: $2y$12$cdpuX8m6RE984aZJY6sR6u18ERZRJ01rd8hYhlG803y6Zvy6NM/Xm
+preferences:
+  theme: light
+  collections:
+    blog:
+      after_save: continue_editing
