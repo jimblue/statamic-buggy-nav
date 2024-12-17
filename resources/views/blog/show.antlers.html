@@ -11,7 +11,8 @@
         {{ /main_content }}
     </section>
     <nav class="w-full flex justify-between text-lg content">
-        {{ collection:previous in="blog" as="posts" limit="1" sort="date:asc" }}
+        Can you try sorting by the title as well?
+        {{ collection:previous in="blog" as="posts" limit="1" sort="date:asc|title:asc" }}
             {{ if no_results }}
                 <span>nothing before</span>
             {{ /if }}
@@ -19,7 +20,7 @@
                 <a href="{{ url }}"><b>PREVIOUS:</b> {{ title }}</a>
             {{ /posts }}
         {{ /collection:previous }}
-        {{ collection:next in="blog" as="posts" limit="1" sort="date:asc" }}
+        {{ collection:next in="blog" as="posts" limit="1" sort="date:asc|title:asc" }}
             {{ if no_results }}
                 <span>nothing after</span>
             {{ /if }}
